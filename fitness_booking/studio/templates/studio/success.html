@@ -1,0 +1,8 @@
+{% extends 'studio/base.html' %}
+{% block content %}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>✅ Booking Confirmed!</strong> You've successfully booked a class.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <a href="{% url 'class_list' %}" class="btn btn-primary">Back to Classes</a>
+{% endblock %}

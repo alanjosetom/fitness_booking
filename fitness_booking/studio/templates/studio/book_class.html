@@ -1,0 +1,10 @@
+{% extends 'studio/base.html' %}
+{% block content %}
+  <h2>Book Class</h2>
+  <form method="post" class="mb-3">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Confirm Booking</button>
+  </form>
+  <a href="{% url 'class_list' %}" class="btn btn-outline-secondary">Back to Classes</a>
+{% endblock %}
