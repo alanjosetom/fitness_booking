@@ -50,4 +50,8 @@ python manage.py runserver
 
 - API: GET /bookings?email=test@example.com
 
-
+ ## Optional Seed Script
+ ```
+python seed_classes.py
+```
+You can run seed_classes.py to pre-fill fitness classes
